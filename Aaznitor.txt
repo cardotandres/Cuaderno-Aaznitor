@@ -1,0 +1,980 @@
+``metadata
+title: CLONE
+description: Cuaderno de rol personalizado
+tags:
+  - Githzerai
+  - Erudito
+  - Artifice
+  - Alquimista
+systems:
+  - 5e
+renderer: V3
+theme: 5ePHB
+
+```
+
+```css
+/* A4 Page Size */
+.page{
+	width  : 210mm;
+	height : 297mm;
+}
+
+/* Removes Drop Caps */
+.page h1+p:first-letter {
+	all: unset;
+}
+
+/* Removes Small-Caps in first line */
+.page h1+p:first-line {
+	all: unset;
+}
+
+/* Align normal text to justify */
+.page {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Orange title */
+.page#p3 h1 { color: orange}
+
+
+/* Removes spacing title on rigth column */
+.page#p4 h1 {
+	column-span: unset;
+}
+
+/* Ink Friendly 
+*:is(.page) {
+	background : transparent !important;
+	filter : drop-shadow(0px 0px 3px #888) !important;
+}
+*/
+
+```
+
+<style>
+  .page#p1{ text-align:center; counter-increment: none; }
+  .page#p1:after{ display:none; }
+  .page:nth-child(2n) .pageNumber { left: inherit !important; right: 2px !important; }
+  .page:nth-child(2n+1) .pageNumber { right: inherit !important; left: 2px !important; }
+  .page:nth-child(2n)::after { transform: scaleX(1); }
+  .page:nth-child(2n+1)::after { transform: scaleX(-1); }
+  .page:nth-child(2n) .footnote { left: inherit; text-align: right; }
+  .page:nth-child(2n+1) .footnote { left: 80px; text-align: left; }
+</style>
+
+![homebrew mug](https://i.postimg.cc/nLV2yz7Q/Sin-t-tulo.png){position:absolute,top:220px,left:20px,width:750px,opacity:0.3}
+{{margin-top:180px}}
+
+# Cuaderno de rol
+
+{{margin-top:25px}}
+
+{{wide
+###
+###
+}}
+
+{{margin-top:400px}}
+
+{{wide
+##### Si encontraste este cuaderno por favor escribime por acá:
+:
+· _______________________________________ ·
+
+##### o sino por acá:
+:
+· _______________________________________ ·
+
+##### Voy a ser muy feliz en el momento en que lo recupere.
+##### ¡Gracias!
+}}
+
+\page
+
+<style>
+  .page#p2{ text-align:left; counter-increment: none; }
+  .page#p2:after{ display:none; }
+  .page:nth-child(2n) .pageNumber { left: inherit !important; right: 2px !important; }
+  .page:nth-child(2n+1) .pageNumber { right: inherit !important; left: 2px !important; }
+  .page:nth-child(2n)::after { transform: scaleX(1); }
+  .page:nth-child(2n+1)::after { transform: scaleX(-1); }
+  .page:nth-child(2n) .footnote { left: inherit; text-align: right; }
+  .page:nth-child(2n+1) .footnote { left: 80px; text-align: left; }
+</style>
+
+{{margin-top:150px}}
+##### Mi DM es:
+:::::
+##### Mis amigos en la mesa son:
+:::::::::::::
+##### Junto a Aaznitor viajan:
+:::::::::::::
+##### Esta aventura empezó el:
+
+
+\page
+
+# Aaznitor 👽
+
+{{wide
+
+###
+###
+
+}}
+
+## Githzerai
+Los githzerai nacieron como raza al final del sangriento levantamiento genocida de los gith contra los azotamentes. Tan pronto como los gith derrotaron a sus enemigos jurados, se sumergieron en una amarga guerra civil.
+
+En el conflicto que siguió, Zerthimon, uno de los gith que había ganado muchos seguidores y desafiado los planes de su líder Gith, fue asesinado. Sus seguidores, llamándose a sí mismos githzerai, reubicaron su civilización en el Plano del Limbo. En contra parte, los denominados githyanki se convirtieron en asaltantes corruptos y destructores, que viven en el Plano Astral.
+
+Hoy, los githzerai continúan resistiendo a los githyanki, además de vengarse de los azotamentes. A través de incursiones en el Plano Material y otros reinos, brindan una dura oposición a los planes de sus enemigos para dominar el mundo.
+
+### Atributos gith
+Tu personaje comparte los siguientes atributos con los otros gith.
+
+***Mejora de característica:*** Tu puntuación de Inteligencia aumenta en 1.
+
+***Edad:*** Los gith alcanzan la madurez al final de la segunda década y viven al rededor de un siglo.
+
+***Tamaño:*** Los gith son más altos y delgados que los humanos, en su mayoría son esbeltos de 6 pies de altura.
+
+***Velocidad:*** Tu velocidad base caminando es de 30 pies.
+
+***Idiomas:*** Puede hablar, leer y escribir Común y Gith.
+
+#### Subraza: Githzerai
+{{text-indent:1em,margin:0px
+***Mejora de característica:*** Tu puntuación de Sabiduría aumenta en 2.
+
+***Alineamiento:*** Los githzerai tienden a ser legales neutros. Su riguroso entrenamiento de habilidades psíquicas requiere una disciplina mental impecable.
+
+***Psionica githzerai:*** Conocés el truco *mano de mago*, y la mano es invisible cuando lanzás el truco con este atributo.
+
+Al alcanzar el nivel 3, podés lanzar el conjuro *escudo* con este atributo. Al alcanzar nivel 5, además podés lanzar el conjuro *detectar pensamientos*. Una vez que lances alguno de estos dos conjuros con este atributo, no podés volver a lanzar ese mismo conjuro hasta que termines un descanso largo.
+}}
+
+También podés lanzar cualquiera de estos conjuros usando cualquier espacio de conjuro que tengas con el nivel apropiado.
+
+Sabiduría es tu aptitud mágica para estos conjuros. Cuando los lances con este atributo, no requieren componentes.
+
+***Disciplina mental:*** Tu defensa psíquica innata te otorga ventaja en las tiradas de salvación que hagas
+para evitar o terminar las condiciones hechizado y asustado en vos mismo.
+
+***Resiliencia psíquica:*** Tenés resistencia al daño psíquico.
+
+::
+
+## Erudito
+Pasaste años aprendiendo sobre el multiverso. Leíste detenidamente manuscritos, estudiaste pergaminos y escuchaste a los mayores expertos de los temas que te interesan. Tus esfuerzos te convirtieron en un maestro de tu campo.
+
+***Competencia en habilidades:*** Conocimiento arcano, Historia.
+
+***Idiomas:*** Elfo y Dracónido.
+
+***Equipo:*** Botella de tinta negra, pluma, cuchillo pequeño, carta de un colega muerto, muda de ropas comunes y una bolsa con 10 po. 
+
+#### Especialidad
+
+|  |
+|:-|
+| *Alquimista* |
+
+### Rasgo: Investigador
+Cuando intentás aprender o recordar algo, incluso aunque no poseas la información exacta, solés saber dónde encontrarla o quién puede proporcionártela. Lo habitual es que este conocimiento provenga de una biblioteca, scriptorium, universidad, u otros eruditos, personas o criaturas instruidas. Tu DM podría decidir que la información que buscás esté oculta en un lugar casi inaccesible o que, sencillamente, sea imposible de encontrar. Para desentrañar los secretos más profundos del multiverso puede ser necesaria una aventura o, quizá, una campaña entera.
+
+#### Características
+Las características del erudito reflejan una vida de estudio, el aspecto definitorio de este trasfondo. Los eruditos están entregados a sus ocupaciones académicas, pues ponen un gran valor en el conocimiento, ya sea como fin en sí mismo o como forma de alcanzar otros ideales.
+
+| Rasgos de personalidad |
+|:-|
+| He leído todos los libros de las mayores bibliotecas del mundo, o me gusta presumir que lo he hecho. |
+
+| Ideales |
+|:-|
+| El camino hacia el poder y la auto-mejora es a través del conocimiento. |
+
+| Vínculos |
+|:-|
+| Tengo un texto antiguo que guarda terribles secretos que no deben caer en malas manos. |
+
+| Defectos |
+|:-|
+| La mayoría de las personas gritan y corren cuando ven a un demonio. Yo tomo nota. |
+
+{{pageNumber 3}}
+{{footnote AAZNITOR | Raza y Trasfondo}}
+
+\page
+
+![logo artífice](https://i.postimg.cc/KvdfSkDg/Artificer.png) {position:absolute,top:50px,left:110px,width:200px,mix-blend-mode:multiply}
+
+{{height:200px}} 
+
+# Artífice
+Maestros de la invención, los artífices usan el ingenio y la magia para desbloquear capacidades extraordinarias en los objetos. Ven la magia como un sistema complejo que espera ser decodificado y luego aprovechado en sus conjuros e invenciones. 
+Los artífices usan herramientas varias para canalizar su poder arcano. Para lanzar un conjuro, un artífice puede usar los suministros de alquimista para crear un elixir potente, suministros de calígrafo para inscribir un sello de poder, o herramientas de manitas para crear un encantamiento temporal. La magia de los artífices está ligada a sus herramientas y talentos, y pocos personajes pueden producir la herramienta adecuada para un trabajo tan bien como lo puede hacer un artífice.
+
+### Buscadores de Conocimiento Nuevo
+Nada emociona más a un artífice que desvelar un nuevo metal o descubrir una fuente de energía elemental. En los círculos de los artífices, los nuevos inventos y descubrimientos extraños crean la mayor emoción. Aquellos que deseen dejar su huella deben innovar creando algo fresco, en lugar de repetir diseños familiares. Este impulso por la novedad empuja a los artífices a convertirse en aventureros.
+
+## Especialización: Alquimista
+
+:
+{{descriptive
+{{font-family:"WalterTurncoat"
+***La magia tanto de alquimistas como de brujas se basa en una poderosa verdad multiversal: los mortales no pueden resistirse a nada con burbujas.***
+}}
+{{text-align:right
+{{font-family:"WalterTurncoat"
+***TASHA***
+}}
+}}
+}}
+
+Un alquimista es un experto en combinar reactivos para producir efectos místicos. Los alquimistas usan sus creaciones para dar vida y para drenarla. La alquimia es la más antigua de las tradiciones artífices, y su versatilidad ha sido valorada a lo largo del tiempo, durante períodos de guerra y paz.
+
+::::
+
+### Creación de un Artífice
+Al crear un artífice, pensá en la relación de tu personaje con el artesano que le enseñó su oficio. ¿El personaje tiene un rival? Hablá con tu DM sobre el papel desempeñado por los artífices en la ambientación y el tipo de organizaciones con las que podrías tener vínculos.
+
+#### Puntos de Golpe
+{{text-indent:1em,margin:0px
+**Dados de Golpe:** 1d8 por nivel de artífice.
+}}
+{{text-indent:1em
+**Puntos de Golpe a nivel 1:** 8 + tu modificador por Constitución.
+}}
+{{text-indent:1em
+**Puntos de Golpe a nivelos superiores:** 1d8 (o 5) + tu modificador por Constitución, por cada nivel de artífice por encima del primero. 
+}}
+
+#### Competencias
+{{text-indent:1em,margin:0px
+**Armaduras:** Armadura ligera, armadura media, escudos.
+}}
+{{text-indent:1em
+**Armas:** Armas simples.
+}}
+{{text-indent:1em
+**Herramientas:** Herramientas de ladrón, herramientas de manitas, suministros de alquimista.
+}}
+{{text-indent:1em
+**Tiradas de salvación:** Constitución e Inteligencia.
+}}
+{{text-indent:1em
+**Habilidades:** Juego de Manos e Investigación.
+}}
+
+####  Competencia Opcional: Armas de Fuego
+Los secretos de las armas de pólvora se han descubierto en varios rincones del multiverso de D&D. Si tu DM usa las reglas sobre armas de fuego de la *Guía del Dungeon Master* y tu artífice ha estado expuesto a la operación de tales armas, entonces es competente con éstas.
+
+#### Equipo Inicial
+Además del que obtengas por tu trasfondo, empezás con el siguiente equipo: 
+* un hacha de mano y una jabalina
+* una ballesta ligera y 20 virotes
+* cota de escamas
+* herramientas de ladrón y equipo de explorador.
+
+::
+
+{{note
+##### La Magia del Artificio
+Como artífice, usás herramientas cuando lanzás tus conjuros. Cuando describas tu lanzamiento de conjuros, pensá en cómo estás usando la herramienta. Por ejemplo, si lanzás *curar heridas* usando suministros de alquimista, podrías estar produciendo rápidamente un bálsamo. Si lo lanzás con herramientas de manitas, podrías tener una araña mecánica miniatura que teja las heridas. El efecto del conjuro es el mismo en ambos sentidos.
+
+Dichos detalles no te limitan de ninguna manera ni te proporcionan ningún beneficio más allá de los efectos del conjuro. No tenés que justificar cómo estás usando las herramientas para lanzar un conjuro. Pero describir tu conjuración de manera creativa es una forma divertida de distinguirte de otros lanzadores de conjuros.
+}}
+
+{{pageNumber 4}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+{{wide
+## Rasgos de Clase
+Como artífice, obtenés ciertos rasgos de clase, que se resumen en la siguiente tabla y se explican a continuación.
+}}
+
+{{classTable,frame,decoration,wide
+##### El Artífice
+|Nivel|Bon.    | Rasgos                                    | Infusiones | Objetos   |Trucos   | --- Espacios de conjuro por nivel ---|||||
+|    ^|Comp.  ^|                                          ^| Conocidas  | Infundidos|Conocidos| 1  | 2  | 3  | 4  | 5  |
+|:---:|:------:|:------------------------------------------|:----------:|:---------:|:-------:|:--:|:--:|:--:|:--:|:--:|
+|  1  | +2     | Retoques mágicos, Lanzamiento de Conjuros | —          | —         | 2       | 2  | —  | —  | —  | —  |
+|  2  | +2     | Infundir Objeto                           |    4       |   2       | 2       | 2  | —  | —  | —  | —  |
+|  3  | +2     | Herramienta Adecuada para el Trabajo, Competencia con Herramientas, Conjuros de Alquimista, Elixir Experimental |    4       |   2       | 2       | 3  | —  | —  | —  | —  |
+|  4  | +2     | Homúnculo Arcano                  |    4       |   2       | 2       | 3  | —  | —  | —  | —  |
+|  5  | +3     | Experto en Alquimia                       |    4       |   2       | 2       | 4  | 2  | —  | —  | —  |
+|  6  | +3     | Pericia con Herramientas                  |    6       |   3       | 2       | 4  | 2  | —  | —  | —  |
+|  7  | +3     | Destello de Genio                         |    6       |   3       | 2       | 4  | 3  | —  | —  | —  |
+|  8  | +3     | Mejora de Característica                  |    6       |   3       | 2       | 4  | 3  | —  | —  | —  |
+|  9  | +4     | Reactivos Restauradores                   |    6       |   3       | 2       | 4  | 3  | 2  | —  | —  |
+| 10  | +4     | Adepto en Objetos Mágicos                 |    8       |   4       | 3       | 4  | 3  | 2  | —  | —  |
+| 11  | +4     | Almacernar Conjuro                        |    8       |   4       | 3       | 4  | 3  | 3  | —  | —  |
+| 12  | +4     | Mejora de Característica                  |    8       |   4       | 3       | 4  | 3  | 3  | —  | —  |
+| 13  | +5     | —                                         |    8       |   4       | 3       | 4  | 3  | 3  | 1  | —  |
+| 14  | +5     | Experto en Objetos Mágicos                |    10      |   5       | 4       | 4  | 3  | 3  | 1  | —  |
+| 15  | +5     | Maestría Química                          |    10      |   5       | 4       | 4  | 3  | 3  | 2  | —  |
+| 16  | +5     | Mejora de Característica                  |    10      |   5       | 4       | 4  | 3  | 3  | 2  | —  |
+| 17  | +6     | —                                         |    10      |   5       | 4       | 4  | 3  | 3  | 3  | 1  |
+| 18  | +6     | Maestro en Objetos Mágicos                |    12      |   6       | 4       | 4  | 3  | 3  | 3  | 1  |
+| 19  | +6     | Mejora de Característica                  |    12      |   6       | 4       | 4  | 3  | 3  | 3  | 2  |
+| 20  | +6     | Alma del Artificio                        |    12      |   6       | 4       | 4  | 3  | 3  | 3  | 2  |
+}}
+
+:
+
+### Retoques Mágicos
+Aprendiste cómo colocar una chispa de magia en objetos mundanos. Para usar esta habilidad, debés tener herramientas de ladrón o herramientas de artesano en la mano. Luego, como acción, tocás un objeto diminuto no mágico y le das una de las siguientes propiedades mágicas de tu elección:
+
+- El objeto emite luz brillante en un radio de 5 pies y luz tenue en otros 5 pies.
+- Cada vez que es tocado por una criatura, el objeto emite un mensaje grabado que se puede escuchar hasta 10 pies de distancia. Declarás el mensaje cuando otorgás esta propiedad al objeto, y la grabación no puede durar más de 6 segundos.
+- El objeto emite continuamente un olor de tu elección o un sonido no verbal (viento, olas, chirridos, o similares). El fenómeno elegido es perceptible hasta a 10 pies de distancia.
+- Un efecto visual estático aparece en una de las superficies del objeto. Este efecto puede ser una imagen, hasta 25 palabras de texto, líneas y formas; o una combinación de estos elementos, como desees.
+
+La propiedad elegida dura indefinidamente. Como acción, podés tocar el objeto y finalizar la misma.
+
+Podés otorgar magia a varios objetos, tocando un objeto cada vez que uses este rasgo, aunque cada uno
+
+:
+
+sólo puede tener una propiedad a la vez.
+El número máximo de objetos que podés retocar con este rasgo al mismo tiempo, es igual a tu modificador por Inteligencia (mínimo de un objeto). Si intentás exceder el máximo, la propiedad más antigua termina inmediatamente y luego se aplica la nueva.
+
+### Lanzamiento de Conjuros
+Estudiaste el funcionamiento de la magia y cómo lanzar conjuros, canalizando la magia a través de objetos. Para los observadores, no parece que estés lanzando conjuros de forma convencional; parece que producís maravillas a partir de objetos mundanos e invenciones extravagantes.
+
+#### Herramientas requeridas
+Producís los efectos de tus conjuros de artífice a través de tus herramientas. Debés tener un canalizador arcano —específicamente herramientas de ladrón o algún tipo de herramientas de artesano— en la mano cuando lances cualquier conjuro con este rasgo (lo que significa que el conjuro tiene un componente "M" cuando lo lances). Debés ser competente con las herramienta para usarlas de esta manera. Consultá el capítulo Equipo en el *Manual del Jugador* por las descripciones de éstas herramientas.
+
+Después de obtener el rasgo Infundir Objeto en el nivel 2, también podés utilizar cualquier objeto que lleve una de tus infusiones como canalizador arcano.
+
+{{pageNumber 5}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+#### Trucos
+A nivel 1, conocés dos trucos de tu elección de la lista de conjuros de artífice. En nivelos superiores, aprendés trucos de artífice adicionales de tu elección, como se muestra en la tabla de Artífice.
+Cuando ganás un nivel en esta clase, podés reemplazar un truco de artífice que conozcas por otro truco de la lista de conjuros de artífice.
+
+#### Preparar y Lanzar Conjuros
+La tabla de Artífice muestra cuántos espacios de conjuro tenés para lanzar tus conjuros de artífice. Para lanzar un conjuro de nivel 1 o superior, debés gastar un espacio del nivel del conjuro o superior. Recuperás todos los espacios de conjuro gastados cuando terminás un descanso largo.
+
+Preparás la lista de los conjuros de artífice que podrías lanzar, eligiendo de la lista de conjuros de artífice que se encuentra al final de la descripción de la clase. Cuando lo hagas, elegí un número de conjuros de artífice igual a tu modificador por Inteligencia + la mitad de tu nivel de artífice, redondeado hacia abajo (mínimo un conjuro). Los conjuros deben ser de un nivel para el que tengas espacios de conjuros.
+
+Por ejemplo, si sos un artífice de nivel 5, tenés cuatro espacios para conjuros de nivel 1 y dos de nivel 2. Con una Inteligencia de 14, tu lista de conjuros preparados puede incluir cuatro conjuros de nivel 1 o 2, en cualquier combinación. Si preparás el conjuro de nivel 1 *curar heridas*, podés lanzarlo usando un espacio de nivel 1 o 2. Lanzar el conjuro no lo elimina de tu lista de conjuros preparados.
+
+Podés cambiar tu lista de conjuros preparados cuando termines un descanso largo. La preparación de una nueva lista de conjuros de artífice requiere que pases tiempo retocando tu canalizador arcano: al menos 1 minuto por nivel de conjuro para cada conjuro de tu lista.
+
+#### Aptitud Mágica
+La Inteligencia es tu aptitud para lanzar conjuros de artífice; tu comprensión de la teoría detrás de la magia te permite manejar estos conjuros con una habilidad superior. Usás tu Inteligencia siempre que un conjuro de artífice se refiera a tu habilidad para lanzar conjuros. Además, usás tu modificador de Inteligencia al establecer la CD de la tirada de salvación para un conjuro de artífice que lances y cuando realices una tirada de ataque con uno.
+
+{{text-align:center
+**CD tirada de salvación de conjuros** = 8 + tu bonificador por competencia + tu modificador por Inteligencia
+
+**Modificador de ataque de conjuros** = tu bonificador por competencia + tu modificador por Inteligencia
+}}
+
+#### Lanzamiento Ritual
+Podés lanzar de forma ritual aquellos conjuros de artífice que tengas preparados y estén marcados como "ritual". 
+
+\column
+
+### Infundir Objeto
+Adquiriste la capacidad de imbuir objetos mundanos con ciertas infusiones mágicas, convirtiendo esos objetos en mágicos.
+
+#### Infusiones conocidas
+Cuando obtengas este rasgo, elegí cuatro infusiones de artífice para aprender, seleccionadas de la sección "Infusiones de artífice" al final de la descripción de la clase. Aprendés infusiones adicionales de tu elección cuando alcances ciertos niveles en esta clase, como se muestra en la columna Infusiones Conocidas de la tabla de Artífice.
+
+Siempre que ganes un nivel en esta clase, podés reemplazar una de las infusiones de artífice que aprendiste por una nueva.
+
+#### Infundir un Objeto
+Siempre que termines un descanso largo, podés tocar un objeto no mágico e imbuirlo con una de tus infusiones de artífice, convirtiéndolo en uno mágico. Una infusión funciona sólo en ciertos tipos de objetos, como se especifica en la descripción de la misma. Si el objeto requiere sintonización, podés sintonizarte con éste en el instante en que lo infundís. Si decidís sintonizarte con el objeto más tarde, debés hacerlo mediante el proceso normal de sintonización (consultá las reglas de sintonización en la *Guía del Dungeon Master*).
+
+Tu infusión permanece en un objeto indefinidamente, pero cuando morís, la infusión desaparece después de una cantidad de días igual a tu modificador por Inteligencia (mínimo de un día). La infusión también desaparece si reemplazás tu conocimiento de la infusión.
+
+Podés infundir más de un objeto no mágico al final de un descanso largo; el número máximo de objetos aparece en la columna Objetos Infundidos de la tabla de Artífice. Debés tocar cada uno de los objetos, y cada una de tus infusiones puede estar en un sólo objeto a la vez. Además, ningún objeto puede soportar más de una de tus infusiones a la vez. Si intentás superar tu número máximo de infusiones, la infusión más antigua finaliza y luego se aplica la nueva.
+
+Si una infusión termina en un objeto que contiene otras cosas, como una *bolsa de contención*, su contenido aparece inofensivamente dentro y alrededor de su espacio.
+
+### Herramienta Adecuada para el Trabajo
+Aprendiste cómo crear exactamente la herramienta que necesitás: con las herramientas de ladrón o las herramientas de artesano en la mano, podés crear mágicamente un conjunto de herramientas de artesano en un espacio desocupado a 5 pies de vos. Esta creación requiere 1 hora de trabajo ininterrumpido, que puede coincidir con un descanso corto o largo. Aunque son producto de la magia, las herramientas no son mágicas y desaparecen cuando volvés a usar este rasgo.
+
+{{pageNumber 6}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+### Competencia con Herramientas
+Obtenés competencia con suministros de alquimista. Si ya tenés esta competencia, obtenés competencia con otro tipo de herramientas de artesano de tu elección.
+
+### Conjuros de Alquimista
+Siempre tenés preparados ciertos conjuros después de alcanzar niveles particulares en esta clase, como se muestra en la tabla a continuación. Estos conjuros cuentan como conjuros de artífice para vos, pero no suman para el número de conjuros de artífice que preparás.
+
+| Nivel de Artífice | Conjuro                                      |
+|:-----------------:|:---------------------------------------------|
+| 3                 | *palabra de curación, rayo nauseabundo*      |
+| 5                 | *esfera de llamas, flecha ácida de Melf*     |
+| 9                 | *forma gaseosa, palabra de curación en masa* |
+| 13                | *guarda contra la muerte, marchitar*         |
+| 17                | *alzar a los muertos, nube aniquiladora*     |
+
+::
+
+### Elixir Experimental
+Siempre que termines un descanso largo, podés producir mágicamente un *elixir experimental* en un matraz vacío que toques. Tirá en la siguiente tabla para ver el efecto del elixir, que se activará cuando alguien lo beba. Como acción, una criatura puede beber el elixir o administrárselo a una criatura incapacitada.
+
+Podés crear *elíxires experimentales* adicionalos gastando un espacio de conjuro de nivel 1 o superior para cada uno. Cuando lo hagas, usá tu acción para crear el elixir en un matraz vacío que toques y elegí el efecto del elixir de la tabla.
+
+Crear un *elixir experimental* requiere que tengas los suministros de alquimista, y cualquier elixir que crees con este rasgo dura hasta que se beba o hasta el final de tu siguiente descanso largo.
+
+Cuando alcanzás ciertos niveles en esta clase, podés preparar más elíxires al final de un descanso largo: dos en el nivel 6 y tres en el nivel 15. Tirá por el efecto de cada elixir por separado. Cada elixir requiere su propio matraz.
+
+| d6 | Efecto |
+|:---|:-----|
+| 1  | **Curación.** Quien lo beba recupera un número de puntos de golpe igual a 2d4 + tu modificador por Inteligencia. |
+| 2  | **Rapidez.** La velocidad caminando de quien lo beba aumenta 10 pies durante 1 hora. |
+| 3  | **Resiliencia.** Quien lo beba obtiene una bonificación de +1 a la CA durante 10 minutos. |
+| 4  | **Audacia.** Quien lo beba tira un d4 y suma el número obtenido a cada tirada de ataque y tirada de salvación que realice durante el siguiente minuto. |
+| 5  | **Vuelo.** Quien lo beba obtiene una velocidad de vuelo de 10 pies durante 10 minutos. |
+| 6  | **Transformación.** El cuerpo de quien lo beba se transforma como si fuera por el conjuro *alterar el propio aspecto*. El bebedor determina la transformación provocada por el conjuro, cuyos efectos duran 10 minutos. |
+
+![imgen Kevin](https://i.postimg.cc/mkPYKBcw/Kevin.png) {position:absolute,top:50px,width:360px,mix-blend-mode:multiply,transform:scaleX(-1)}
+
+{{artist,position:absolute,top:520px
+##### Kevin
+[Sirviente Homúnculo]
+}}
+
+{{height:760px}}
+
+{{monster,frame
+## Sirviente homúnculo
+___
+**Velocidad:**       :: 10 pies, volar 15 pies 
+___
+|  FUE  |  DES  |  CON  |  INT  |  SAB  |  CAR  |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|4 (-3) |11 (+0)|12 (+1)|10 (+0)|10 (+0)|7  (-2)|
+___
+**Tiradas de Salvación:** :: Des +0 más BC
+**Habilidades:** :: Sigilo +0 más BC
+### Acciones
+***Cañón arcano.*** Tu sirviente realiza la acción *activación* descrita en la tabla anterior.
+}}
+
+### Homúnculo arcano
+
+Aprendiste a crear un cañón mágico. Usando herramientas de carpintero o herrero podés usar una acción para crear mágicamente un cañón arcano diminuto en una superficie horizontal a 5 pies tuyo, que no esté ocupada. Como acción adicional podés anexárselo a tu sirviente homúnculo.
+
+Una vez que crees un cañón, no podés volver a hacerlo hasta que finalices un descanso largo o gastes un espacio de conjuro nivel 1 o superior para cambiarlo. Sólo podés tener un cañón a la vez y no podés crear uno mientras otro esté presente.
+
+{{pageNumber 7}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+El cañón es un objeto mágico. Desaparece luego de 1 hora, a menos que uses una acción para hacerlo desaparecer antes. Elegís su apariencia cuando lo crees; además decidís qué tipo de cañón es, eligiendo de las opciones de la siguiente tabla. En cada uno de tus turnos, podés usar tu acción adicional para ordenarle a tu siriviente homúnculo que active el cañón.
+
+| Cañón | Activación |
+|:-|:-|
+| Lanzallamas | El cañón exhala fuego en un cono adyacente de 15 pies hacia donde elijas. Cada criatura en el área debe realizar una tirada de salvación de Destreza contra tu CD de salvación de conjuro, sufriendo 2d8 de daño de fuego si falla la tirada o la mitad de daño si la supera. Los objetos inflamables que se encuentren en el área que no lleve o vista nadie arderán. |
+| Ballesta de fuerza | Hacés un ataque de conjuro de rango, que se origina en el cañón, contra una criatura o un objeto a menos de 120 pies del mismo. Si impactás, el objetivo sufre 2d8 de daño de fuerza, y si el objetivo es una criatura, es empujada 5 pies en dirección contraria al cañón. |
+| Protector | El cañón emite un estallido de energía positiva que te brinda a vos y a cada criatura de tu elección a menos de 10 pies del mismo, un número de puntos de golpe temporales iguales a 1d8 + tu modificador de Inteligencia (mínimo de +1). |
+
+Al anexar un cañón a tu sirviente homúnculo, algunas estadísticas del mismo se ven afectadas, según se muestra en el cuadro anterior.
+
+### Experto en Alquimia
+Desarrollaste un dominio magistral de los químicos mágicos, mejorando la curación y el daño que creás a través de ellos. Siempre que lances un conjuro usando suministros de alquimista como canalizador arcano, obtenés una bonificación a una tirada de ese conjuro. Esa tirada debe restaurar puntos de golpe o ser una tirada de daño que provoque daño de ácido, fuego, necrótico o veneno, y la bonificación es igual a tu modificador por Inteligencia (mínimo de +1).
+
+### Pericia con Herramientas
+Tu bonificador por competencia ahora se duplica para cualquier prueba de habilidad que use tu competencia con una herramienta.
+
+### Destello de Genio
+Adquiriste la capacidad de encontrar soluciones bajo presión. Cuando vos u otra criatura que puedas ver a 30 pies o menos, realice una prueba de habilidad o una tirada de salvación, podés usar tu reacción para añadir tu modificador por Inteligencia a la tirada.
+
+Podés usar este rasgo un número de veces igual a tu modificador por Inteligencia (mínimo una vez). Recuperás todos los usos cuando terminás un descanso largo.
+
+### Mejora de Característica
+Cuando alcances los nivelos 8, 12, 16 y 19, podés elegir una puntuación de característica y aumentarla en 2, o dos puntuaciones de característica y acrecentarlas en 1 cada una. Como es habitual, no podés aumentar una puntuación de característica por encima de 20 usando este rasgo.
+
+Si tu DM permite el uso de dotes, podés elegir una en su lugar.
+
+### Reactivos Restauradores
+Podés incorporar reactivos restauradores en algunos de tus trabajos:
+- Siempre que una criatura beba un *elixir experimental* que creaste, la criatura gana puntos de golpe temporales iguales a 2d6 + tu modificador por Inteligencia (mínimo de 1 punto de golpe temporal).
+- Podés lanzar el conjuro *restablecimiento menor* sin gastar un espacio de conjuro y sin prepararlo, siempre que uses los suministros de alquimista como canalizador arcano. Podés hacerlo un número de veces igual a tu modificador por Inteligencia (mínimo de una vez), y recuperás todos los usos cuando terminás un descanso largo.
+
+### Adepto en Objetos Mágicos
+Lograste una comprensión profunda de cómo usar y hacer objetos mágicos:
+- Podés sintonizarte con hasta cuatro objetos mágicos a la vez.
+- Si creás un objeto mágico con una rareza común o infrecuente, te tomará una cuarta parte del tiempo normal y te costará la mitad del oro habitual.
+
+### Almacenar conjuro
+Ahora podés almacenar un conjuro en un objeto. Siempre que termines un descanso largo, podés tocar un arma simple o marcial, o un objeto que puedas usar como canalizador arcano, y almacenar un conjuro en éste; eligiendo un conjuro de nivel 1 o 2 de la lista de conjuros de artífice que requiera 1 acción para ser lanzado (no necesitás tenerlo preparado).
+
+Mientras sostiene el objeto, una criatura puede realizar una acción para producir el efecto del conjuro, usando tu modificador de habilidad de lanzamiento de conjuros. Si el conjuro requiere concentración, la criatura debe concentrarse. El conjuro permanece en el objeto hasta que sea usado un número de veces igual al doble de tu modificador de Inteligencia (mínimo dos veces) o hasta que uses este rasgo nuevamente para almacenar un conjuro en un objeto.
+
+{{pageNumber 8}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+### Experto en Objetos Mágicos
+Tu habilidad con los objetos mágicos se profundiza:
+- Podés sintonizarte hasta con cinco objetos mágicos a la vez.
+- Ignorás todos los requisitos de clase, raza, conjuro y nivel al sintonizarte con un objeto mágico o usar el mismo.
+
+### Maestría Química
+Estuviste expuesto a tantos productos químicos, que presentan poco riesgo para vos, y podés usarlos para acabar rápidamente con ciertas dolencias:
+- Obtenés resistencia al daño por ácido y veneno, y sos inmune a la condición de envenenamiento.
+- Podés lanzar *restablecimiento mayor* y *curar* sin gastar un espacio de conjuro, sin prepararlos, y sin componentes materiales, siempre que uses los suministros de alquimista como canalizador arcano. Una vez que lances  cualquiera de los conjuros con este rasgo, no podés volver a lanzar ese conjuro con este mismo rasgo hasta que termines un descanso largo.
+
+### Maestro en Objetos Mágicos
+Ahora podés sintonizarte hasta con seis objetos mágicos a la vez.
+
+### Alma del Artificio
+Desarrollaste una conexión mística con tus objetos mágicos que podés utilizar para protegerte:
+- Obtenés una bonificación de +1 a todas las tiradas de salvación por cada objeto mágico con el que estés sintonizado actualmente.
+
+- Si te reducen a 0 puntos de golpe pero no te matan directamente, podés usar tu reacción para terminar una de tus infusiones de artífice, lo que hará que tus puntos de golpe se reduzcan hasta 1 en lugar de 0.
+
+::
+###
+###
+::
+
+## Lista de Conjuros de Artífice
+{{height:15px}}
+Ésta es la lista de conjuros para consultar cuando aprendés un conjuro de artífice. La lista está organizada por nivel de conjuro, no por nivel de personaje.
+
+Los conjuros están en el *Manual del Jugador*, a menos que tenga un asterisco (está en el *Caldero de Tasha para Todo*), o dos asteriscos (está en la *Guía de Xanathar para Todo*).
+
+{{text-align:left;text-left:inter-word
+{{spellList
+##### Trucos (Nivel 0) 
+- Agarre electrizante
+- Atracción del relámpago*
+- Congelación**
+- Crear hoguera**
+- Descarga de fuego
+- Estallido de espadas*
+- Filo de llamas verdes*
+- Filo tronador*
+- Guía
+- Látigo de espinas
+- Luces danzantes
+- Luz
+- Mano de mago
+- Mensaje
+- Piedad con los moribundos
+- Piedra mágica**
+- Prestidigitación
+- Rayo de escarcha
+- Reparar
+- Resistencia
+- Rociada venenosa
+- Salpicadura ácida
+- Trueno**
+
+##### Nivel  1
+- Absorber elementos**
+- Alarma
+- Brebaje cáustico de Tasha*
+- Caída de pluma
+- Catapulta**
+- Curar heridas
+- Detectar magia
+- Disfrazarse
+- Falsa vida
+- Fuego feérico
+- Grasa
+- Identificar
+- Purificar comida y bebida
+- Retirada expeditiva
+- Salto
+- Santuario
+- Trampa**
+- Zancada prodigiosa
+
+##### Nivel 2
+- Agrandar/Reducir
+- Alterar el propio aspecto
+- Arma mágica
+- Auxilio
+- Boca mágica
+- Calentar metal
+- Cerradura arcana
+- Contorno borroso
+- Escritura celestial**
+- Invisibilidad
+- Levitar
+- Llama permanente
+- Pirotecnia**
+- Potenciar característica
+- Protección contra veneno
+- Restablecimiento menor
+- Telaraña
+- Trepar cual arácnido
+- Truco de la cuerda
+- Ver invisibilidad
+- Visión en la oscuridad
+
+##### Nivel 3
+- Acelerar
+- Arma elemental
+- Caminar sobre el agua
+- Crear comida y bebida
+- Desplazamiento
+- Disipar magia
+- Flechas flamígeras**
+- Fortaleza intelectual*
+- Glifo custodio
+- Protección contra energía
+- Respirar bajo el agua
+- Revivir
+- Siesta**
+- Sirviente diminuto**
+- Volar
+
+##### Nivel 4
+- Cofre oculto de Leomund
+- Esfera elástica de Otiluke
+- Fabricar
+- Invocar constructo*
+- Libertad de movimiento
+- Mastín fiel de Mordenkainen
+- Moldear la piedra
+- Ojo arcano
+- Perdición elemental**
+- Piel pétrea
+- Sanctasanctórum privado de Mordenkainen
+
+##### Nivel 5
+- Animar objetos
+- Creación
+- Empoderar habilidades**
+- Mano de Bigby
+- Muro de piedra
+- Restablecimiento mayor
+- Transmutar roca**
+}}
+}}
+
+{{pageNumber 9}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+## Infusiones de Artífice
+Las infusiones de artífice son procesos extraordinarios que convierten rápidamente un objeto común en uno mágico. La descripción de cada una de las siguientes infusiones detalla el tipo de objeto que puede recibirlo, y si el objeto mágico resultante requiere sintonización.
+
+Algunas infusiones especifican un nivel mínimo de artífice. No podés aprender tal infusión hasta que estés al menos en ese nivel.
+
+A menos que la descripción de una infusión indique lo contrario, no podés aprenderla más de una vez.
+
+:
+### Afilador de Mentes
+*Objeto: una armadura o túnica*
+:
+
+El objeto infundido puede enviar una sacudida al portador para que vuelva a enfocar su mente. El objeto tiene 4 cargas. Cuando el portador falla una tirada de salvación de Constitución para mantener la concentración en un conjuro, puede usar su reacción para gastar 1 de las cargas del objeto para tener éxito. El objeto recupera diariamente al amanecer, 1d4 de las cargas gastadas.
+
+:
+### Anillo de Repostaje Mágico
+*Requisito previo: artífice nivel 6*
+{{text-indent:0em,margin:0px
+*Objeto: un anillo (requiere sintonización)*
+}}
+:
+
+Mientras usa este anillo, una criatura puede usar su acción para recuperar un espacio de conjuro gastado. El espacio recuperado puede ser de nivel 3 o inferior. Una vez utilizado, el anillo no se puede volver a utilizar hasta el próximo amanecer.
+
+:
+### Arma Mejorada
+*Objeto: un arma simple o marcial*
+:
+
+Este arma mágica otorga una bonificación de +1 a las tiradas de ataque y de daño realizadas con ella. 
+La bonificación aumenta a +2 cuando alcanzás el nivel 10 en esta clase.
+
+:
+### Arma Radiante
+*Requisito previo: artífice nivel 6*
+{{text-indent:0em,margin:0px
+*Objeto: un arma simple o marcial (requiere sintonización)*
+}}
+:
+Esta arma mágica otorga una bonificación de +1 a las tiradas de ataque y daño realizadas con ella. Mientras la sostiene, el portador puede usar una acción adicional para hacer que arroje luz brillante en un radio de 30 pies y luz tenue en 30 pies adicionales. El portador puede apagar la luz como acción adicional.
+
+El arma tiene 4 cargas. Como reacción, inmediatamente después de ser golpeado por un ataque, el portador puede gastar 1 carga y hacer que el atacante quede cegado hasta el final del siguiente turno del atacante, a menos que tenga éxito en una tirada de salvación de Constitución contra tu CD de salvación de conjuro.
+
+{{text-indent:0em,margin:0px
+El arma recupera diariamente al amanecer, 1d4 de las cargas gastadas.
+}}
+
+:
+### Arma Retornante
+*Objeto: un arma simple o marcial con propiedad arrojadiza*
+:
+
+Esta arma mágica otorga un bonificador +1 a las tiradas de ataque y daño realizadas con ella, y regresa a la mano del portador inmediatamente después de que se use para realizar un ataque a distancia.
+
+:
+### Armadura de Fuerza Mágica
+*Objeto: una armadura (requiere sintonización)*
+:
+
+Esta armadura tiene 6 cargas. El portador puede gastar las cargas de las siguientes formas:
+- Cuando el mismo hace una prueba de Fuerza o una tirada de salvación de Fuerza, puede gastar 1 carga para agregar una bonificación a la tirada igual a su modificador de Inteligencia.
+- Si el portador es tumbado, puede utilizar su reacción y gastar 1 carga para evitar ser tumbado.
+
+{{text-indent:0em
+La armadura recupera diariamente al amanecer, 1d6 de las cargas gastadas.
+}}
+
+:
+### Armadura de Propulsión Arcana
+*Requisito previo: artífice nivel 14*
+{{text-indent:0em,margin:0px
+*Objeto: una armadura (requiere sintonización)*
+}}
+:
+
+El portador de esta armadura obtiene los siguientes beneficios:
+
+- La velocidad caminando del portador aumenta en 5 pies.
+- La armadura incluye guanteletes, cada uno de los cuales es un arma mágica cuerpo a cuerpo que solo se puede empuñar como tal, cuando la mano no sostiene nada. El portador es competente con los guanteletes, y cada uno inflige 1d8 de daño de fuerza al golpear y tiene la propiedad arrojadiza, con un alcance normal de 20 pies y un alcance largo de 60 pies. Cuando se arroja, el guantelete se desprende y vuela hacia el objetivo del ataque, luego regresa inmediatamente al portador y se vuelve a unir.
+- La armadura no se puede quitar contra la voluntad del portador.
+
+- Si al portador le faltan miembros —manos, brazos, pies, piernas o apéndices similares—, la armadura los reemplaza. Los reemplazos funcionan de manera idéntica a las partes del cuerpo que sustituyen.
+
+{{pageNumber 10}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+### Armadura Resistente
+*Requisito previo: artífice nivel 6*
+{{text-indent:0em,margin:0px
+*Objeto: una armadura (requiere sintonización)*
+}}
+:
+
+Mientras esté usando esta armadura, una criatura tiene resistencia a uno de los siguientes tipos de daño que elegís cuando infundís el objeto: ácido, frío, fuego, fuerza, necrótico, psíquico, radiante, relámpago, trueno, o veneno.
+
+:
+### Botas del Camino Ventoso
+*Requisito previo: artífice nivel 6*
+{{text-indent:0em,margin:0px
+*Objeto: un par de botas (requiere sintonización)*
+}}
+:
+
+Mientras usa estas botas, una criatura puede teletransportarse hasta 15 pies como acción adicional a un espacio desocupado que pueda ver. La criatura debe haber ocupado ese espacio en algún momento durante el turno actual.
+
+:
+### Canalizador Arcano Mejorado
+*Objeto: una vara, bastón o varita (requiere sintonización)*
+:
+
+Mientras sostiene este objeto, una criatura obtiene un bonificador +1 a las tiradas de ataque con conjuros. Además, la criatura ignora la cobertura media cuando realiza un ataque con conjuro.
+
+La bonificación aumenta a +2 cuando alcanzás el nivel 10 en esta clase.
+
+:
+### Defensa Mejorada
+*Objeto: una armadura o escudo*
+:
+
+Una criatura obtiene un bonificador +1 a la Clase de Armadura mientras porta (armadura) o empuña (escudo) el objeto infundido.
+
+La bonificación aumenta a +2 cuando alcanzás el nivel 10 en esta clase.
+
+
+### Escudo de Repulsión
+*Requisito previo: artífice nivel 6*
+{{text-indent:0em,margin:0px
+*Objeto: un escudo (requiere sintonización)*
+}}
+:
+
+Una criatura obtiene un bonificador +1 a la Clase de Armadura mientras empuña este escudo.
+
+El escudo tiene 4 cargas. Mientras lo sostiene, el portador puede usar una reacción inmediatamente después de ser golpeado por un ataque cuerpo a cuerpo para gastar 1 de las cargas del escudo y empujar al atacante hasta 15 pies de distancia. El escudo recupera diariamente al amanecer, 1d4 de las cargas gastadas.
+
+:
+### Replicar Objeto Mágico
+Usando esta infusión, replicás un objeto mágico en particular. Podés aprender esta infusión varias veces; cada vez que lo hagas, elegí un objeto mágico de los que puedas, escogiendo de las tablas de Objetos Replicables. El título de cada tabla indica el nivel que debés tener en la clase para elegir un elemento de la misma. Alternativamente, podés elegir entre los objetos mágicos comunes del juego, sin incluir pociones ni pergaminos.
+
+En las tablas, la entrada de un objeto indica si el objeto requiere sintonización. Consultá la descripción del objeto en la *Guía del Dungeon Master* para obtener más información del mismo, incluido el tipo de objeto necesario para su fabricación.
+
+##### Objetos Replicables (Artífice nivel 2)
+| Objeto mágico | Sintonización |
+|:------------------|:-----:|
+| Anteojos de la noche | No |
+| Bolsa de contención | No |
+| Cuerda de escalada | No |
+| Gorro de respirar bajo el agua | No |
+| Piedras mensajeras | No |
+| Varita de detección mágica | No |
+| Varita de secretos | No |
+| Vasija alquímica | No |
+
+##### Objetos Replicables (Artífice nivel 6)
+| Objeto mágico | Sintonización |
+|:------------------|:-----:|
+| Anillo de caminar sobre las aguas | No |
+| Anteojos de encantamiento | Sí |
+| Botas élficas | No |
+| Capa de la mantarraya | No |
+| Capa élfica | Sí |
+| Flauta de la aparición | No |
+| Guantes de ladrón | No |
+| Linterna de revelación | No |
+
+##### Objetos Replicables (Artífice nivel 10)
+| Objeto mágico | Sintonización |
+|:------------------|:-----:|
+| Anillo de escudo mental  | Sí |
+| Anillo de salto | Sí |
+| Anteojos de vista de águila  | Sí |
+| Babuchas de trepar cual arácnido | Sí |
+| Botas aladas | Sí |
+| Botas de las tierras invernales | Sí |
+| Botas de zancadas y brincos | Sí |
+| Brazales de arquería  | Sí |
+| Broche escudo | Sí |
+| Capa de protección | Sí |
+| Carcaj de Ehlonna | No |
+| Collar de adaptación | Sí |
+| Diadema de intelecto | Sí |
+| Flauta de las cloacas | Sí |
+| Guanteletes de fuerza de ogro | Sí |
+| Guantes atrapaflechas | Sí |
+| Guantes de natación y escalada | Sí |
+| Medallón de los pensamientos  | Sí |
+| Sombrero de disfraz | Sí |
+| Talismán de cerrar heridas | Sí |
+| Yelmo de telepatía | Sí |
+
+
+{{pageNumber 11}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+##### Objetos Replicables (Artífice nivel 14)
+| Objeto mágico | Sintonización |
+|:------------------|:-----:|
+| Amuleto de salud  | Sí |
+| Anillo de libertad de acción | Sí |
+| Anillo de protección | Sí |
+| Anillo del carnero  | Sí |
+| Botas de levitación | Sí |
+| Botas de velocidad | Sí |
+| Brazales de defensa | Sí |
+| Capa de murciélago | Sí |
+| Cinturón de fuerza de gigante de las colinas | Sí |
+| Cuerno de estallido | No |
+| Gema de visión | Sí |
+| Grilletes dimensionalos | No |
+
+:
+### Sirviente Homúnculo
+*Objeto: una gema o cristal que valga al menos 100 po*
+
+Aprendés métodos intrincados para crear mágicamente un homúnculo especial que te sirve. El objeto que infundís sirve como el corazón de la criatura, alrededor del cual se forma instantáneamente un cuerpo.
+
+Vos determinás la apariencia del homúnculo. Algunos artífices prefieren pájaros de aspecto mecánico, mientras que a otros les gustan los frascos alados o los calderos animados en miniatura.
+
+El homúnculo es amigable con vos y tus compañeros, y obedece tus órdenes. Mirá las estadísticas de esta criatura en su perfil, que usa tu bonificador de competencia (BC) en varios lugares.
+
+En combate, el homúnculo comparte tu orden de iniciativa, pero toma su turno inmediatamente después del tuyo. Puede moverse y usar su reacción por sí solo, pero la única acción que realiza en su turno es Esquivar, a menos que vos realices una acción adicional en tu turno para ordenarle que haga otra acción. Esa acción puede ser una de su perfil o alguna otra. Si estás incapacitado, el homúnculo puede realizar cualquier acción de su elección, no sólo Esquivar.
+
+El homúnculo recupera 2d6 puntos de golpe si se le lanza el conjuro *reparar*. Si vos o el homúnculo mueren, éste desaparece, dejando su corazón en su espacio.
+
+:
+### Tiro Repetitivo
+*Objeto: un arma simple o marcial con propiedad munición (requiere sintonía)*
+:
+
+Esta arma mágica otorga un bonificador +1 a las tiradas de ataque y daño realizadas con ella cuando se usa para realizar un ataque a distancia, e ignora la propiedad de carga si la tiene.
+
+Si no cargás munición en el arma, ésta produce la suya propia, creando automáticamente una pieza de munición mágica cuando realizás un ataque a distancia con ella. La munición creada por el arma se desvanece en el instante después de que impacta o falla en un objetivo.
+
+{{monster,frame
+## Sirviente Homúnculo
+*Autómata diminuto*
+___
+**Clase de Armadura:** :: 13 (armadura natural)
+**Puntos de Golpe:**  :: 1 + tu modificador por Inteligencia + tu nivel de artífice (tiene un número de Dados de golpe [d4s] igual a tu nivel de artífice)
+**Velocidad:**       :: 20 pies, volar 30 pies 
+___
+|  FUE  |  DES  |  CON  |  INT  |  SAB  |  CAR  |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|4 (-3) |15 (+2)|12 (+1)|10 (+0)|10 (+0)|7 (-2) |
+___
+**Tiradas de Salvación:** :: Des +2 más BC
+**Habilidades:** :: Percepción +0 más BC × 2, Sigilo +2 más BC
+**Inmunidades a Daño:** :: Veneno
+**Inmunidades a Estados:** :: Agotamiento, envenenado
+**Sentidos:** :: Visión en la oscuridad 60 pies, Percepción pasiva 10 + (BC × 2)
+**Idiomas:** :: Entiende los idiomas que hablás
+**Bonificación por Competencia (BC):** :: Igual a tu bonificación
+___
+***Evasión.*** Si el homúnculo es objetivo de un efecto que le permite realizar una tirada de salvación de Destreza para recibir sólo la mitad de daño, en su lugar: no recibe daño si tiene éxito en la tirada de salvación, y sólo la mitad de daño si falla. No puede usar este rasgo si está incapacitado.
+
+### Acciones
+***Golpe de Fuerza.*** *Ataque de arma a distancia:* tu modificador de ataque con conjuro para impactar, alcance de 30 pies, un objetivo que puedas ver. *Impacto:* 1d4 + BC de daño por fuerza. 
+### Reacciones
+***Canalizar magia.*** El homúnculo entrega un conjuro que lances cuyo alcance sea de toque. El homúnculo debe estar a menos de 120 pies de vos.
+}}
+
+:
+### Yelmo de la Conciencia
+*Requisito previo: artífice nivel 10*
+{{text-indent:0em,margin:0px
+*Objeto: un casco (requiere sintonización)*
+}}
+:
+
+Mientras lleva este casco, una criatura tiene ventaja en las tiradas de iniciativa. Además, el portador no puede sorprenderse, siempre que no esté incapacitado.
+
+{{pageNumber 12}}
+{{footnote AAZNITOR | Clase}}
+
+\page
+
+{{wide
+### Otros rasgos obtenidos
+}}
+
+{{pageNumber 13}}
+{{footnote AAZNITOR | Extras}}
+
+
+\page
+
+{{wide
+##### Datos que no quiero olvidar:
+}}
+
+{{pageNumber 14}}
+{{footnote AAZNITOR | Extras}}
+
+
+\page
+
+{{pageNumber 15}}
+{{footnote AAZNITOR | Extras}}
+
+\page
+
+{{pageNumber 16}}
+{{footnote}}
